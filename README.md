@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎭 Allumee Show  
 
-## Getting Started
+## 📌 Description  
+Allumee Show est une application permettant de gérer un spectacle avec une liste de **scènes et transitions**.  
+L'utilisateur peut :  
+- Ajouter, modifier et supprimer des scènes  
+- Gérer les transitions entre scènes  
+- Modifier la durée des scènes et des transitions  
+- Réorganiser les scènes par **Drag & Drop**  
+- Sauvegarder et recharger les données  
 
-First, run the development server:
+Le projet est développé avec **Next.js**, **TypeScript**, **TailwindCSS** et **React Hooks**.  
 
-```bash
+---
+
+## 🚀 Installation  
+
+sh
+git clone https://github.com/HTU9HTU9/allumee-show.git
+cd allumee-show
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+➡️ Accéder à http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎮 Fonctionnalités  
 
-## Learn More
+### 🔹 Gestion des scènes  
+- **Ajout de scènes** : possibilité d'ajouter de nouvelles scènes au spectacle.  
+- **Modification des scènes** : changement du **nom** et de la **durée** d'une scène.  
+- **Suppression des scènes** : suppression d'une scène avec mise à jour des transitions associées.  
 
-To learn more about Next.js, take a look at the following resources:
+### 🔹 Gestion des transitions  
+- **Création automatique des transitions** : lorsqu'une nouvelle scène est ajoutée.  
+- **Mise à jour dynamique des transitions** : si une scène est renommée ou supprimée.  
+- **Modification des transitions** : possibilité de changer la durée d'une transition.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🔹 Réorganisation des scènes  
+- **Drag & Drop** : déplacement des scènes avec la souris.  
+- **Mise à jour des transitions** après un réarrangement.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🔹 Sauvegarde et récupération des données  
+- **Sauvegarde automatique** : stockage des scènes et transitions dans `localStorage`.  
+- **Chargement des données** : récupération des données sauvegardées ou chargement d'un exemple par défaut.  
+- **Réinitialisation** : suppression des scènes et remise à zéro avec une scène par défaut.  
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🔹 Calcul des durées  
+- **Affichage de la durée totale du spectacle**.  
+- **Affichage de la durée totale des scènes**.  
+- **Affichage de la durée totale des transitions**.  
